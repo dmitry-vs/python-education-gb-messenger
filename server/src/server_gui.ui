@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Server</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(20, 20, 20);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
@@ -22,6 +25,9 @@
       <width>391</width>
       <height>191</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="title">
      <string>Clients</string>
@@ -40,6 +46,10 @@
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
      </property>
      <attribute name="horizontalHeaderVisible">
       <bool>true</bool>
@@ -73,6 +83,9 @@
       <height>261</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
     <property name="title">
      <string>Service info</string>
     </property>
@@ -95,6 +108,9 @@
       <width>391</width>
       <height>101</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="title">
      <string>Parameters</string>
@@ -166,6 +182,10 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 138, 21);
+border: none;</string>
+     </property>
      <property name="text">
       <string>Stop server</string>
      </property>
@@ -178,6 +198,10 @@
        <width>71</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 138, 21);
+border: none;</string>
      </property>
      <property name="text">
       <string>Start server</string>
@@ -192,6 +216,9 @@
       <width>391</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="title">
      <string>Add new client</string>
@@ -231,6 +258,10 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 138, 21);
+border: none;</string>
+     </property>
      <property name="text">
       <string>Add client</string>
      </property>
@@ -246,8 +277,15 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

@@ -2,75 +2,102 @@
 
 # Form implementation generated from reading ui file 'client_gui.ui'
 #
-# Created by: PyQt5 UI code generator 5.10.1
+# Created by: PyQt5 UI code generator 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
 
+
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setEnabled(True)
         MainWindow.resize(662, 711)
+        MainWindow.setStyleSheet("background-color: rgb(20, 20, 20);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("")
         self.centralwidget.setObjectName("centralwidget")
         self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox.setGeometry(QtCore.QRect(30, 10, 601, 71))
+        self.groupBox.setStyleSheet("color: rgb(255, 255, 255);")
         self.groupBox.setObjectName("groupBox")
         self.label_username_key = QtWidgets.QLabel(self.groupBox)
         self.label_username_key.setGeometry(QtCore.QRect(20, 20, 61, 16))
+        self.label_username_key.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_username_key.setObjectName("label_username_key")
         self.label_server_ip_key = QtWidgets.QLabel(self.groupBox)
         self.label_server_ip_key.setGeometry(QtCore.QRect(260, 20, 61, 16))
+        self.label_server_ip_key.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_server_ip_key.setObjectName("label_server_ip_key")
         self.label_server_port_key = QtWidgets.QLabel(self.groupBox)
         self.label_server_port_key.setGeometry(QtCore.QRect(520, 20, 61, 16))
+        self.label_server_port_key.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_server_port_key.setObjectName("label_server_port_key")
         self.label_username_val = QtWidgets.QLabel(self.groupBox)
         self.label_username_val.setGeometry(QtCore.QRect(20, 40, 121, 16))
+        self.label_username_val.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_username_val.setObjectName("label_username_val")
         self.label_server_ip_val = QtWidgets.QLabel(self.groupBox)
         self.label_server_ip_val.setGeometry(QtCore.QRect(260, 40, 121, 16))
+        self.label_server_ip_val.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_server_ip_val.setObjectName("label_server_ip_val")
         self.label_server_port_val = QtWidgets.QLabel(self.groupBox)
         self.label_server_port_val.setGeometry(QtCore.QRect(520, 40, 51, 16))
+        self.label_server_port_val.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_server_port_val.setObjectName("label_server_port_val")
         self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_2.setGeometry(QtCore.QRect(30, 240, 201, 51))
+        self.groupBox_2.setStyleSheet("color: rgb(255, 255, 255);\n"
+"")
         self.groupBox_2.setObjectName("groupBox_2")
         self.lineEdit_add_contact = QtWidgets.QLineEdit(self.groupBox_2)
         self.lineEdit_add_contact.setGeometry(QtCore.QRect(10, 20, 131, 21))
         self.lineEdit_add_contact.setObjectName("lineEdit_add_contact")
         self.pushButton_add_contact = QtWidgets.QPushButton(self.groupBox_2)
         self.pushButton_add_contact.setGeometry(QtCore.QRect(150, 20, 41, 21))
+        self.pushButton_add_contact.setStyleSheet("background-color: rgb(255, 138, 21);\n"
+"border: none;")
         self.pushButton_add_contact.setObjectName("pushButton_add_contact")
         self.groupBox_3 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_3.setGeometry(QtCore.QRect(30, 300, 201, 371))
+        self.groupBox_3.setStyleSheet("color: rgb(255, 255, 255);\n"
+"")
         self.groupBox_3.setObjectName("groupBox_3")
         self.pushButton_delete_contact = QtWidgets.QPushButton(self.groupBox_3)
         self.pushButton_delete_contact.setGeometry(QtCore.QRect(10, 340, 121, 21))
+        self.pushButton_delete_contact.setStyleSheet("background-color: rgb(255, 138, 21);\n"
+"border: none;")
         self.pushButton_delete_contact.setObjectName("pushButton_delete_contact")
         self.listWidget_contacts = QtWidgets.QListWidget(self.groupBox_3)
         self.listWidget_contacts.setGeometry(QtCore.QRect(10, 20, 181, 311))
         self.listWidget_contacts.setObjectName("listWidget_contacts")
         self.groupBox_4 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_4.setGeometry(QtCore.QRect(250, 420, 381, 111))
+        self.groupBox_4.setStyleSheet("color: rgb(255, 255, 255);\n"
+"")
         self.groupBox_4.setObjectName("groupBox_4")
         self.textEdit_input = QtWidgets.QTextEdit(self.groupBox_4)
         self.textEdit_input.setGeometry(QtCore.QRect(10, 20, 301, 81))
         self.textEdit_input.setObjectName("textEdit_input")
         self.pushButton_send = QtWidgets.QPushButton(self.groupBox_4)
         self.pushButton_send.setGeometry(QtCore.QRect(320, 20, 51, 23))
+        self.pushButton_send.setStyleSheet("background-color: rgb(255, 138, 21);\n"
+"border: none;")
         self.pushButton_send.setObjectName("pushButton_send")
         self.groupBox_5 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_5.setGeometry(QtCore.QRect(250, 90, 381, 321))
+        self.groupBox_5.setStyleSheet("color: rgb(255, 255, 255);\n"
+"")
         self.groupBox_5.setObjectName("groupBox_5")
         self.textBrowser_messages = QtWidgets.QTextBrowser(self.groupBox_5)
         self.textBrowser_messages.setGeometry(QtCore.QRect(10, 20, 361, 291))
         self.textBrowser_messages.setObjectName("textBrowser_messages")
         self.groupBox_6 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_6.setGeometry(QtCore.QRect(250, 540, 381, 131))
+        self.groupBox_6.setStyleSheet("color: rgb(255, 255, 255);\n"
+"")
         self.groupBox_6.setObjectName("groupBox_6")
         self.textBrowser_service_info = QtWidgets.QTextBrowser(self.groupBox_6)
         self.textBrowser_service_info.setEnabled(True)
@@ -78,6 +105,8 @@ class Ui_MainWindow(object):
         self.textBrowser_service_info.setObjectName("textBrowser_service_info")
         self.groupBox_7 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_7.setGeometry(QtCore.QRect(30, 90, 201, 141))
+        self.groupBox_7.setStyleSheet("color: rgb(255, 255, 255);\n"
+"")
         self.groupBox_7.setObjectName("groupBox_7")
         self.lineEdit_server_ip = QtWidgets.QLineEdit(self.groupBox_7)
         self.lineEdit_server_ip.setGeometry(QtCore.QRect(10, 80, 111, 20))
@@ -87,6 +116,8 @@ class Ui_MainWindow(object):
         self.lineEdit_server_port.setObjectName("lineEdit_server_port")
         self.pushButton_connect = QtWidgets.QPushButton(self.groupBox_7)
         self.pushButton_connect.setGeometry(QtCore.QRect(130, 80, 61, 21))
+        self.pushButton_connect.setStyleSheet("background-color: rgb(255, 138, 21);\n"
+"border: none;")
         self.pushButton_connect.setObjectName("pushButton_connect")
         self.lineEdit_username = QtWidgets.QLineEdit(self.groupBox_7)
         self.lineEdit_username.setGeometry(QtCore.QRect(10, 20, 181, 20))
@@ -97,13 +128,17 @@ class Ui_MainWindow(object):
         self.lineEdit_password.setObjectName("lineEdit_password")
         self.pushButton_disconnect = QtWidgets.QPushButton(self.groupBox_7)
         self.pushButton_disconnect.setGeometry(QtCore.QRect(130, 110, 61, 21))
+        self.pushButton_disconnect.setStyleSheet("background-color: rgb(255, 138, 21);\n"
+"border: none;")
         self.pushButton_disconnect.setObjectName("pushButton_disconnect")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 662, 21))
+        self.menubar.setStyleSheet("color: rgb(255, 255, 255);")
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setStyleSheet("color: rgb(255, 255, 255);")
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
@@ -140,4 +175,3 @@ class Ui_MainWindow(object):
         self.lineEdit_password.setText(_translate("MainWindow", "TestPassword"))
         self.lineEdit_password.setPlaceholderText(_translate("MainWindow", "Password"))
         self.pushButton_disconnect.setText(_translate("MainWindow", "Disconnect"))
-
