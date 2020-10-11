@@ -2,20 +2,24 @@
 
 # Form implementation generated from reading ui file 'server_gui.ui'
 #
-# Created by: PyQt5 UI code generator 5.10.1
+# Created by: PyQt5 UI code generator 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
 
+
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(451, 681)
+        MainWindow.setStyleSheet("background-color: rgb(20, 20, 20);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox.setGeometry(QtCore.QRect(30, 120, 391, 191))
+        self.groupBox.setStyleSheet("color: rgb(255, 255, 255);")
         self.groupBox.setObjectName("groupBox")
         self.tableWidget_clients = QtWidgets.QTableWidget(self.groupBox)
         self.tableWidget_clients.setGeometry(QtCore.QRect(10, 20, 371, 161))
@@ -24,6 +28,8 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.tableWidget_clients.sizePolicy().hasHeightForWidth())
         self.tableWidget_clients.setSizePolicy(sizePolicy)
+        self.tableWidget_clients.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);")
         self.tableWidget_clients.setObjectName("tableWidget_clients")
         self.tableWidget_clients.setColumnCount(3)
         self.tableWidget_clients.setRowCount(0)
@@ -37,12 +43,14 @@ class Ui_MainWindow(object):
         self.tableWidget_clients.verticalHeader().setVisible(False)
         self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_2.setGeometry(QtCore.QRect(30, 380, 391, 261))
+        self.groupBox_2.setStyleSheet("color: rgb(255, 255, 255);")
         self.groupBox_2.setObjectName("groupBox_2")
         self.textBrowser_service_info = QtWidgets.QTextBrowser(self.groupBox_2)
         self.textBrowser_service_info.setGeometry(QtCore.QRect(10, 20, 371, 231))
         self.textBrowser_service_info.setObjectName("textBrowser_service_info")
         self.groupBox_3 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_3.setGeometry(QtCore.QRect(30, 10, 391, 101))
+        self.groupBox_3.setStyleSheet("color: rgb(255, 255, 255);")
         self.groupBox_3.setObjectName("groupBox_3")
         self.label_status_key = QtWidgets.QLabel(self.groupBox_3)
         self.label_status_key.setGeometry(QtCore.QRect(270, 30, 61, 16))
@@ -58,12 +66,17 @@ class Ui_MainWindow(object):
         self.lineEdit_port.setObjectName("lineEdit_port")
         self.pushButton_stop_server = QtWidgets.QPushButton(self.groupBox_3)
         self.pushButton_stop_server.setGeometry(QtCore.QRect(160, 60, 71, 21))
+        self.pushButton_stop_server.setStyleSheet("background-color: rgb(255, 138, 21);\n"
+"border: none;")
         self.pushButton_stop_server.setObjectName("pushButton_stop_server")
         self.pushButton_start_server = QtWidgets.QPushButton(self.groupBox_3)
         self.pushButton_start_server.setGeometry(QtCore.QRect(160, 30, 71, 21))
+        self.pushButton_start_server.setStyleSheet("background-color: rgb(255, 138, 21);\n"
+"border: none;")
         self.pushButton_start_server.setObjectName("pushButton_start_server")
         self.groupBox_4 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_4.setGeometry(QtCore.QRect(30, 320, 391, 51))
+        self.groupBox_4.setStyleSheet("color: rgb(255, 255, 255);")
         self.groupBox_4.setObjectName("groupBox_4")
         self.lineEdit_add_new_client_login = QtWidgets.QLineEdit(self.groupBox_4)
         self.lineEdit_add_new_client_login.setGeometry(QtCore.QRect(10, 20, 121, 20))
@@ -73,13 +86,17 @@ class Ui_MainWindow(object):
         self.lineEdit_add_new_client_password.setObjectName("lineEdit_add_new_client_password")
         self.pushButton_add_new_client = QtWidgets.QPushButton(self.groupBox_4)
         self.pushButton_add_new_client.setGeometry(QtCore.QRect(310, 20, 75, 21))
+        self.pushButton_add_new_client.setStyleSheet("background-color: rgb(255, 138, 21);\n"
+"border: none;")
         self.pushButton_add_new_client.setObjectName("pushButton_add_new_client")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 451, 21))
+        self.menubar.setStyleSheet("color: rgb(255, 255, 255);")
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setStyleSheet("color: rgb(255, 255, 255);")
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
@@ -110,4 +127,3 @@ class Ui_MainWindow(object):
         self.lineEdit_add_new_client_login.setPlaceholderText(_translate("MainWindow", "Login"))
         self.lineEdit_add_new_client_password.setPlaceholderText(_translate("MainWindow", "Password"))
         self.pushButton_add_new_client.setText(_translate("MainWindow", "Add client"))
-
